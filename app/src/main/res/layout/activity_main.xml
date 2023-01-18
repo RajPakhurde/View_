@@ -9,25 +9,38 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/tv_count"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text=" "
-            app:layout_constraintBottom_toTopOf="@+id/btn_click_me"
+            android:layout_marginTop="104dp"
+            android:inputType = "number"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btn_click_me"
+        <TextView
+            android:id="@+id/tv_sum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="click me"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            android:text=""
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_add"
+            app:layout_constraintStart_toStartOf="@+id/btn_add"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="ADD"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.254"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/et_input" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
